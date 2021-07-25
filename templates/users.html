@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Users{% enblock title %}
+
+{% block content %}
+<h3>Users</h3>
+
+<ul>
+{% for user in users %}    <!-- Jinja allows us to use a for loop inside an HTML template -->
+    <li><a href="/user/{{ user.id }}">{{ user.name }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

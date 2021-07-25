@@ -1,0 +1,10 @@
+.idea/
+venv/
+Lib/
+Scripts/
+pyvenv.cfg
+*.py[cod]
+*.sqlite
+.pytest_cache/
+__pycache__/
+secrets.py
